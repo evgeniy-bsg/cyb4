@@ -1,0 +1,62 @@
+<html>
+
+<head>
+	<title>Demo 01</title>
+	<style>
+		h1 {
+			/* Comment3 */
+			color: #FF0000;
+			background-color: lightyellow;
+		}
+	</style>
+	<script type="text/javascript">
+		function sayHello() { // Comment2
+			// alert("Hello world!");
+			document.getElementById("hdr2").innerText = "Hello World!";
+			document.getElementById("hdr2").style.color = "#550000";
+		}
+	</script>
+	<script type="text/javascript">
+		function sayMeow() {
+			document.getElementById("hdr2").innerText = "MEOW!";
+			document.getElementById("hdr2").style.color = "#990000";
+		}
+	</script>
+	<script type="text/javascript">
+		function sayMeowMOver() {
+			document.getElementById("hdr2").innerText = "Hello Mouse-Cat-World!";
+			document.getElementById("hdr2").style.color = "#00FF00";
+		}
+	</script>
+	<script type="text/javascript">
+		function sayMeowMOut() {
+			document.getElementById("hdr2").innerText = "About cats";
+			document.getElementById("hdr2").style.color = "#FF0000";
+		}
+	</script>
+	<script type="text/javascript">
+		function soundClick() {
+			var audio = new Audio();
+			audio.src = "meow.mp3";
+			audio.autoplay = true;
+		}
+	</script>
+</head>
+
+<body>
+	<a href="index1.html">Back to Index page</a>
+	<audio src="meow.mp3"></audio>
+	<!-- Comment1 -->
+	<h1>Just HTML</h1>
+	<button onclick="sayHello();">Click me</button>
+	<p>sdaf sdaf sdaf sdaf 1</p>
+	<p>sdaf sdaf sdaf sdaf 2</p>
+	<p>sdaf sdaf sdaf sdaf 3</p>
+	<a href="https://ya.ru/">Yandex</a><br />
+	<h1 id="hdr2">About cats</h1>
+	<!--<img onclick="sayMeow ();" src="cat-img.jpeg" style="width:500px"/>-->
+	<!--<img onmouseover="sayMeowMOver();" onmouseout="sayMeowMOut();" src="cat-img.jpeg" style="width:500px"/>-->
+	<img onclick="soundClick ();" src="images/cat-img.jpeg" style="width:500px" />
+</body>
+
+</html>
